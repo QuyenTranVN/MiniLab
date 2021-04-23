@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>
@@ -6,32 +6,325 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang=""> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Content-Language" content="en-us"/>
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+<html class="no-js" lang="">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="Content-Language" content="en-us" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Varela+Round"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/vendor/slick.css" />
+		<!-- <link rel="stylesheet" href="./assets/css/vendor/bootstrap.css" /> -->
+		<link rel="stylesheet" href="./assets/css/main.css" />
+	</head>
+	<body>
+		<!-- Header section -->
+		<header class="navbar">
+			<div class="container">
+				<h1>
+					<a href="/" class="navbar__logo">
+						<img src="./assets/img/header/MINILAB.png" alt="" />
+					</a>
+				</h1>
+				<div class="navbar__toggle" id="mobile__menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+				<div class="navbar__menu">
+					<a href="#banner" class="navbar__link" id="home-page">Home</a>
+					<a href="#expert" class="navbar__link" id="about-page">About us</a>
+					<a href="#work" class="navbar__link" id="project-page">Our Project</a>
+					<a href="#marketing" class="navbar__link" id="contact-page"
+						>Contact us</a
+					>
+					<a href="" class="navbar__link" id="search">
+						<i class="fas fa-search"></i>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!--  Closed Header section -->
 
-</head>
-<body>
+		<main>
+			<!-- Banner section -->
+			<section class="banner" id="banner">
+				<div
+					class="background"
+					style="background-image: url(./assets/img/header/hexagon.png)"
+				></div>
+				<div class="container">
+					<div class="banner__left">
+						<img src="./assets/img/Hexagon/hexagon2.png" alt="hexagon" />
+						<img
+							src="./assets/img/Hexagon/hexagon1.png"
+							alt="hexagon"
+							class="orange__hexagon"
+						/>
+						<h2 class="animation__banner">
+							Start <br />
+							Thinking
+						</h2>
+						<span class="animation__banner"> Creative Ideas</span>
+						<p class="animation__banner">
+							Lorem Ipsum is simply dummy text of the <br />
+							printing and typesetting industry.
+						</p>
+						<button class="btn btn-header animation__banner">See More</button>
+					</div>
+					<div class="banner__right">
+						<img src="./assets/img/header/headerpic.png" alt="headerpic" />
+					</div>
+				</div>
+			</section>
+			<!-- Closed Banner -->
 
+			<!-- section expert -->
+			<section class="expert" id="expert">
+				<div
+					class="background3"
+					style="background-image: url(./assets/img/Hexagon/hexagon3.svg)"
+				></div>
+				<div
+					class="background1"
+					style="background-image: url(./assets/img/Hexagon/hexagon1.png)"
+				></div>
+				<div class="wrapper">
+					<h2 class="title">
+						We've Creative Digital Agency <br />
+						& Marketing Expert
+					</h2>
+					<div class="expert__boxes">
+						<div class="expert__item animation__expert">
+							<img src="./assets/img/expert/lightbub.svg" alt="lightbulb" />
+							<img
+								src="./assets/img/expert/whitelightbulb.svg"
+								alt="white-lightbulb"
+								class="expert-white"
+							/>
+							<h3 class="expert__item__title">Startup Business</h3>
+							<p class="expert__item__text">
+								Lorem Ipsum is simply dummy text of the printing and industry.
+							</p>
+						</div>
+						<div class="expert__item animation__expert">
+							<img src="./assets/img/expert/painting.svg" alt="lightbulb" />
+							<img
+								src="./assets/img/expert/whitepainting.svg"
+								alt="white-lightbulb"
+								class="expert-white"
+							/>
 
+							<h3 class="expert__item__title">Startup Business</h3>
+							<p class="expert__item__text">
+								Lorem Ipsum is simply dummy text of the printing and industry.
+							</p>
+						</div>
+						<div class="expert__item animation__expert">
+							<img src="./assets/img/expert/tech.svg" alt="lightbulb" />
+							<img
+								src="./assets/img/expert/whitetech.svg"
+								alt="white-lightbulb"
+								class="expert-white"
+							/>
 
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
+							<h3 class="expert__item__title">Startup Business</h3>
+							<p class="expert__item__text">
+								Lorem Ipsum is simply dummy text of the printing and industry.
+							</p>
+						</div>
+					</div>
+					<button class="btn">Watch More</button>
+				</div>
+			</section>
+			<!-- closed expert -->
 
-<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-<script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
+			<!-- section Work -->
+			<section class="work" id="work">
+				<div
+					class="background1"
+					style="background-image: url(./assets/img/Hexagon/hexagon1.png)"
+				></div>
+				<div class="wrapper">
+					<div class="work__video animation__work">
+						<img src="./assets/img/work/video.png" alt="" />
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="work__infor">
+						<h2 class="title animation__work">Let's See How We Work</h2>
+						<p class="animation__work">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since.
+						</p>
+						<button class="btn animation__work">Watch More</button>
+					</div>
+				</div>
+			</section>
+			<!-- Closed work  -->
 
-</body>
+			<!-- Section client -->
+			<section class="client" id="client">
+				<div
+					class="background3"
+					style="background-image: url(./assets/img/Hexagon/hexagon4.svg)"
+				></div>
+				<div
+					class="background1"
+					style="background-image: url(./assets/img/Hexagon/hexagon1.png)"
+				></div>
+				<h2 class="title">Some Awesome Words By Our CLients</h2>
+				<div class="container">
+					<div class="client__text animation__client">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since.
+						</p>
+						<button class="btn animation__client">Watch More</button>
+					</div>
+					<div class="client__comment">
+						<div class="client__comment__item animation__client">
+							<img
+								src="./assets/img/client/client1.png"
+								alt="client"
+								class="client__profile"
+							/>
+							<h3>James Richard</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and industry.
+							</p>
+						</div>
+						<div class="client__comment__item animation__client">
+							<img
+								src="./assets/img/client/client2.png"
+								alt="client"
+								class="client__profile"
+							/>
+							<h3>Rose Charles</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and industry.
+							</p>
+						</div>
+						<div class="client__comment__item animation__client">
+							<img
+								src="./assets/img/client/client2.png"
+								alt="client"
+								class="client__profile"
+							/>
+							<h3>Rose Charles</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and industry.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- CLosed Client -->
+
+			<!-- Marketing section -->
+			<section class="marketing" id="marketing">
+				<div
+					class="background1"
+					style="background-image: url(./assets/img/Hexagon/hexagon1.png)"
+				></div>
+				<div
+					class="background-small"
+					style="background-image: url(./assets/img/Hexagon/hexagon1.png)"
+				></div>
+				<div
+					class="background3"
+					style="background-image: url(./assets/img/Hexagon/hexagon3.svg)"
+				></div>
+				<div
+					class="background4"
+					style="background-image: url(./assets/img/Hexagon/hexagon4.svg)"
+				></div>
+				<div class="wrapper">
+					<h2 class="title animation__marketing">
+						Update Your Marketing Resources
+					</h2>
+					<form class="animation__marketing">
+						<input type="email" class="email" placeholder="Enter Your Mail" />
+						<button type="submit" class="btn">sign in</button>
+					</form>
+				</div>
+			</section>
+			<!-- closed Marketing section -->
+		</main>
+
+		<!-- footer section -->
+		<footer class="footer">
+			<h2>MINI<span>LAB</span></h2>
+			<div class="wrapper">
+				<div class="footer__features">
+					<h3>FEATURES</h3>
+					<ul class="footer__list">
+						<li><a href="#">Live chat</a></li>
+						<li><a href="#">Email Marketing</a></li>
+						<li><a href="#">User Analytics</a></li>
+						<li><a href="#">Marketing</a></li>
+						<li><a href="#">Automation</a></li>
+					</ul>
+				</div>
+				<div class="footer__resources">
+					<h3>RESOURCES</h3>
+					<ul class="footer__list">
+						<li><a href="#">Watch A Demo</a></li>
+						<li><a href="#">Docs</a></li>
+						<li><a href="#">Intergrations & API</a></li>
+						<li><a href="#">IOS And Android</a></li>
+						<li><a href="#">Apps</a></li>
+					</ul>
+				</div>
+				<div class="footer__company">
+					<h3>COMPANY</h3>
+					<ul class="footer__list">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Customers</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer__contact">
+					<h3>CONTACT</h3>
+					<a href="#">support@domain.com</a>
+					<ul class="footer__list">
+						<li><i class="fab fa-facebook-f"></i></li>
+						<li><i class="fab fa-instagram"></i></li>
+						<li><i class="fab fa-linkedin"></i></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- closed footer section -->
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="http://browsehappy.com/">upgrade your browser</a> to improve
+				your experience.
+			</p>
+		<![endif]-->
+
+		<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+		<!-- <script src="assets/js/vendor/bootstrap.min.js"></script> -->
+		<script src="./assets/js/vendor/slick.min.js"></script>
+		<script src="./assets/js/vendor/gsap.min.js"></script>
+		<script src="./assets/js/vendor/ScrollTrigger.min.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
-

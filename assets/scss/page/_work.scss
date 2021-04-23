@@ -1,0 +1,72 @@
+.work {
+	position: relative;
+	overflow: hidden;
+	padding-top: 244px;
+	.background1 {
+		left: 140px;
+		top: 134px;
+	}
+	@media #{$ipad} {
+		padding-top: 150px;
+		.background1 {
+			top: 60px;
+		}
+	}
+	.wrapper {
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		img {
+			border-radius: 25px;
+		}
+		@media #{$ipad} {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+	}
+	&__video {
+		position: relative;
+		@media #{$ipad} {
+			margin: 0 auto 50px;
+		}
+		i {
+			color: $color-default-lightest;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			font-size: 69px;
+			padding: 43px 40px 43px 50px;
+			background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+			border-radius: 50%;
+			cursor: pointer;
+			&:hover {
+				color: $color-default-darkest;
+			}
+		}
+	}
+	&__infor {
+		width: 42%;
+		margin-left: 40px;
+		@media #{$ipad} {
+			text-align: center;
+			width: 90%;
+		}
+		h2 {
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		p {
+			margin-bottom: 40px;
+			font-size: 18px;
+			color: $color-default-darker;
+			@media #{$pc-small} {
+				font-size: 16px;
+			}
+			@media #{$ipad} {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

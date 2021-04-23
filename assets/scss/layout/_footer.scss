@@ -1,0 +1,100 @@
+.footer {
+	color: $color-default-lightest;
+	padding: 95px 0 90px;
+	background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+
+	h2 {
+		text-align: center;
+		font-size: 40px;
+		margin-bottom: 80px;
+		color: $color-default-darkest;
+		span {
+			color: $color-default-lightest;
+		}
+	}
+	.wrapper {
+		width: 90%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		justify-items: center;
+		h3 {
+			margin-bottom: 48px;
+			font-size: 21px;
+		}
+		ul {
+			font-size: 22px;
+			li {
+				list-style: none;
+				line-height: 1.8;
+				a {
+					text-decoration: none;
+					color: white;
+					&:hover {
+						color: $color-default-darkest;
+					}
+				}
+			}
+		}
+		:nth-child(4) {
+			ul {
+				display: flex;
+				li {
+					margin: 20px 15px 0 0;
+					font-size: 2rem;
+					cursor: pointer;
+					&:hover {
+						color: $color-default-darkest;
+					}
+				}
+			}
+			a {
+				margin-right: 10px;
+				font-size: 22px;
+				text-decoration: none;
+				color: $color-default-lightest;
+				&:hover {
+					color: $color-default-darkest;
+				}
+			}
+		}
+		@media #{$ipad-pro} {
+			h3 {
+				font-size: 18px;
+			}
+			ul {
+				font-size: 19px;
+			}
+		}
+		@media #{$pc-small} {
+			h3 {
+				font-size: 17px;
+			}
+			ul {
+				font-size: 18px;
+			}
+		}
+		@media #{$ipad} {
+			grid-template-columns: 1fr 1fr;
+			grid-row-gap: 60px;
+			h3 {
+				font-size: 27px;
+				margin-bottom: 18px;
+			}
+			ul {
+				font-size: 20px;
+			}
+		}
+		@media #{$phone} {
+			grid-template-columns: 1fr;
+			justify-items: unset;
+			margin-left: 20%;
+			h3 {
+				font-size: 35px;
+				margin-bottom: 37px;
+			}
+			ul {
+				font-size: 20px;
+			}
+		}
+	}
+}
