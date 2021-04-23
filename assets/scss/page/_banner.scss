@@ -1,0 +1,133 @@
+.banner {
+	overflow: hidden;
+	.background {
+		height: 847px;
+		width: 804px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		@media #{$pc} {
+			width: 710px;
+		}
+		@media #{$ipad-pro} {
+			width: 600px;
+		}
+		@media #{$pc} {
+			width: 560px;
+			top: -10%;
+		}
+		@media #{$ipad} {
+			width: 450px;
+			top: -30%;
+		}
+		@media #{$phone} {
+			width: 315px;
+		}
+	}
+	.container {
+		width: 90%;
+		padding-top: 210px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 1170px;
+		margin: auto;
+		position: relative;
+		@media #{$ipad-pro} {
+			width: 90%;
+		}
+		@media #{$ipad} {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__left {
+		position: relative;
+		margin: auto 20px 28px 0;
+		width: 105%;
+		@media #{$ipad} {
+			margin: 0 auto 40px;
+			width: 80%;
+		}
+		.orange__hexagon {
+			position: absolute;
+			left: -10%;
+			top: -5%;
+			transform: translateY(-40%);
+		}
+		h2 {
+			font-size: 80px;
+			font-weight: 600;
+			line-height: 1.13;
+			@media #{$pc} {
+				font-size: 70px;
+			}
+			@media #{$ipad-pro} {
+				font-size: 4rem;
+			}
+			@media #{$pc-small} {
+				font-size: 50px;
+			}
+			@media #{$ipad} {
+				font-size: 4rem;
+			}
+			@media #{$phone} {
+				font-size: 3rem;
+			}
+		}
+
+		span {
+			font-size: 80px;
+			font-weight: bold;
+			line-height: 1.4;
+			color: $color-default-darker;
+			margin-bottom: 13px;
+			display: inline-block;
+			@media #{$pc} {
+				font-size: 70px;
+			}
+			@media #{$ipad-pro} {
+				font-size: 4rem;
+			}
+			@media #{$pc-small} {
+				font-size: 50px;
+			}
+			@media #{$ipad} {
+				font-size: 4rem;
+			}
+			@media #{$phone} {
+				font-size: 3rem;
+			}
+		}
+		p {
+			margin-bottom: 40px;
+			font-size: 24px;
+			font-weight: 300;
+			color: $color-default-darker;
+			@media #{$pc} {
+				font-size: 20px;
+			}
+			@media #{$ipad-pro} {
+				font-size: 18px;
+			}
+			@media #{$ipad} {
+				font-size: 1.5rem;
+			}
+			@media #{$phone} {
+				font-size: 1rem;
+			}
+		}
+	}
+	&__right {
+		position: relative;
+		margin-left: auto;
+		width: 90%;
+		height: auto;
+		display: flex;
+		justify-content: flex-end;
+		@media #{$ipad} {
+			justify-content: center;
+			width: 100%;
+		}
+	}
+}

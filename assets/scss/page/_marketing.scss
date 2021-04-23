@@ -1,0 +1,95 @@
+.marketing {
+	position: relative;
+	padding: 200px 0 255px;
+	overflow: hidden;
+	.background1 {
+		top: 0;
+		left: 70px;
+	}
+	.background-small {
+		position: absolute;
+		bottom: 173px;
+		left: 218px;
+		width: 61px;
+		height: 57px;
+		background-repeat: no-repeat;
+		@media #{$pc} {
+			bottom: 100px;
+		}
+	}
+	.background3 {
+		left: -128px;
+		transform: rotate(336deg);
+		top: 44px;
+	}
+	.background4 {
+		right: -129px;
+		transform: rotate(40deg);
+		bottom: 64px;
+	}
+	@media #{$pc} {
+		padding: 150px 0 200px;
+	}
+	@media #{$ipad-pro} {
+		padding: 100px 0 150px;
+	}
+	.wrapper {
+		position: relative;
+		margin: auto;
+
+		img {
+			position: absolute;
+		}
+		h2 {
+			text-align: center;
+			margin: auto;
+			margin-bottom: 93px;
+			line-height: 1.5;
+			max-width: 850px;
+			width: 90%;
+			@media #{$ipad} {
+				margin-bottom: 50px;
+			}
+		}
+		form {
+			margin: auto;
+			text-align: center;
+			max-width: 774px;
+			width: 90%;
+			justify-content: space-between;
+			display: flex;
+			::placeholder {
+				font-size: 16px;
+				font-weight: bold;
+				background: linear-gradient(to bottom, #ff5f6d, #ffc371);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			.email {
+				padding: 23px 0 23px 68px;
+				width: 560px;
+				border-radius: 30px;
+				border: none;
+				outline: none;
+				box-shadow: 2px 8px 10px 0 #b4b4b45e;
+			}
+			button {
+				border-radius: 30px;
+				padding: 23px 54px;
+				font-size: 16px;
+				font-weight: bold;
+				background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+				&:hover {
+					background-image: linear-gradient(to right, #f84655, #f8b351);
+				}
+			}
+			@media #{$pc-small} {
+				flex-wrap: wrap;
+				.email {
+					width: 100%;
+					margin-bottom: 35px;
+				}
+			}
+		}
+	}
+}
